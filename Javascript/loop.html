@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <h2>Aman</h2>
+    <h2>dhaman</h2>
+    <ul>
+    </ul>
+    <input type="text" id="input">;
+<script>
+//  let array = ["dhaman","neetu","aman","rita","priya","geeta"];
+    // for (let i = 0; i < array.length; i++) {
+    //     console.log(array[i]);
+    // }
+//   array.forEach(e => {
+//     console.log(e);
+//   });
+let ulTag = document.querySelector('ul');
+let input =document.querySelector('#input');
+ 
+// input.onkeyup = () => {
+//     let inputary = input.value.split(',');
+//     console.log(inputary);
+//     let storevalue = '';
+//     for (let i = 0; i < inputary.length; i++) {
+//         storevalue += "<li>"+ inputary[i] + "</li>";
+//         console.log(storevalue);
+        
+//     }
+//     ulTag.innerHTML = storevalue;
+    
+// }
+  input.onkeyup = () =>{
+    let inputarray = input.value.split(',');
+    console.log(inputarray);
+    let addvalue = '';
+   for (let k = 0; k <inputarray.length; k++) {
+    addvalue += "<li>"+inputarray[k]+"</li>";
+    console.log(addvalue)
+    
+   } 
+  ulTag.innerHTML =addvalue
+  }   
+   </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- api -->
+    <script>
+
+      let html ="";  
+        fetch('data.json')
+       .then ((Response) => Response.json())
+        .then(data => {
+            console.log(data)
+            data.person.forEach(e => {
+                html+=`<h1> ${e.name}</h1>;
+                       <p> ${e.Age}</p>`;
+                console.log(e);
+
+           } );
+           document.write(html)
+        })
+
+     let array =["nitish","queen","Priya" ,"rita"];
+       let x = 0;
+
+        while (array.length > x) {
+            console.log(array[x])
+            x++;
+            
+        }
+    </script>
+    
+</body>
+</html>

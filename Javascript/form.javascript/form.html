@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form javascript</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <form id="tophead">
+        <input type="text" placeholder="Name" id="Name">
+        <input type="number" placeholder="Phone no." id="phoneno">
+        <input type="text" placeholder="E-mail" id="e-mail">
+        <input type="password" placeholder="Password" id=" password" required>
+        <button id="submitbnt" type="submit">submit</button>
+
+    </form>
+    <script>
+        let name = document.getElementById('Name');
+        let phoneno = document.getElementById('phoneno');
+        let email = document.getElementById('e-mail')
+        let password = document.getElementById('password');
+        let submit = document.getElementById('submitbnt');
+
+        //   validate
+        let status = false;
+      
+    
+        submit.onclick = (e) => {
+            if (name.value == '') {
+                name.style.border = "1px solid red";
+                e.preventDefault();
+                status = false;
+                
+                
+            }else{
+                if (phoneno.value == '') {
+                    phoneno.style.border = '1px solid red';
+                    name.style.border ="1px solid green";
+                    e.preventDefault();
+                    status = false;
+
+                    
+                }else{
+                    if (email.value == '') {
+                        email.style.border = "1px solid red";
+                        phoneno.style.border = "1px solid green";
+                        e.preventDefault();
+                        status = false;
+  
+
+                      }else{
+                        if(password.value == ''){
+                            password.style.border = "1px solid red";
+                            email.style.border  = "1px solid green";
+                            status = false;
+                            e.preventDefault();
+
+                           }else{
+                            status = true;
+
+                           }
+                }
+            }
+        }
+
+            
+        
+    }
+
+        
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

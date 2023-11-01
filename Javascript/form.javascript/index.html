@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body> 
+    <form  id="mainbox">
+        <input type="text" placeholder="Name" id="name" >
+        <input type="number"placeholder="Phoneno" id="Phoneno">
+        <input type="text" placeholder="E-mail" id="e-mail" >
+        <input type="text" placeholder="Password" id="password">
+        <button type="submit" id="submitbtn">submit</button>
+
+
+    </form>
+    <script>
+      let Name = document.getElementById('name');
+      let Number = document.getElementById('Phoneno'); 
+      let Email = document.getElementById('e-mail');
+      let Password = document.getElementById('password');
+      let Submit = document.getElementById('submitbtn');  
+
+    //   validate
+   status = false
+    Submit.onclick = (e) => { 
+        if (Name.value ==''){
+            Name.style.border = '4px red solid'
+            e.preventDefault();  
+               status = false
+
+        }else { if(Number.value == '') {
+            Name.style.border = "4px green solid"
+            Number.style.border = "4px red solid"
+            e.preventDefault();
+             status = false
+
+        } else { if(Email.value == '') {
+            Number.style.border = "4px green solid"
+            Email.style.border = "4px red solid"
+            e.preventDefault();
+            status=false;
+
+           }else{  if(Password.value ==''){
+            Email.style.border = "4px green solid"
+            Password.style.border = "4px red solid"
+            e.preventDefault();
+        }
+        status = true;
+        
+        }
+    
+    
+    
+    }
+
+}
+    }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

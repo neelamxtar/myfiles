@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <link rel="stylesheet" href=" \clock .css">
+</head> 
+   <!-- <form onsubmit="re">
+   <input type="text" placeholder="name" id="name">
+    <button type="submit" id="submit"> submit </button>
+
+   </form> -->
+<body>   
+       
+      <div id="mainbox">
+        <div id="maincontainer">
+            <span  id="hr">03</span>:
+            <span id="min">23</span>:
+            <span id="sec">04</span>
+            
+         </div >
+       
+        <div class="date">
+           <h2 id="date">22 </h2>/
+           <h2 id="month">August</h2>/
+           <h2 id="year">2023</h2>
+        </div>
+     
+      </div>
+
+       <script>
+                    let hr = document.getElementById('hr');
+                    let min = document.getElementById('min');
+                    let sec = document.getElementById('sec');
+
+                    let date = document.getElementById('date');
+                    let month = document.getElementById('month');
+                    let year = document.getElementById('year');
+                    
+                    setInterval(() => {
+                        let time = new Date();
+                        let hour = time.getHours();
+                        let minutes = time.getMinutes();
+                        let seconds = time.getSeconds();
+                        let dates  = time.getDate();
+                        let months = time.getMonth() + 1;
+                        let years = time.getFullYear();  
+                        
+                        hr.innerText = hour;
+                        min.innerText = minutes ;
+                        sec.innerText = seconds;
+                        date.innerText = dates;
+                        month.innerText = months; 
+                        year.innerText = years;
+
+                    }, 1000);     
+                        
+// 
+                    // for (let index = 0; index < array.length; index++) {
+                    //     const element = array[index];
+                        
+                    // }
+
+
+
+
+
+
+
+
+        // console.log(now(6,3,'-'));
+        // function now(a,b,op){
+        // if( op === '+'){
+        //         return a+b;
+        //     }
+        //     else{op === '-'}
+        //              return a-b ;
+    
+        // }
+        // validate
+        // let name = document.getElementById('name');
+        // let submit = document.getElementById('submit');
+       
+
+        // submit.onclick = (e) => {
+        //     if( name.value == ''){
+        //         e.preventDefault();3
+        //         name.style.border = '3px solid red';
+
+        //     }   
+        // } 
+    // function name( )
+ 
+    // submit .onclick =(e)=>{
+    //     if( name.value == ''){
+    //         e.preventDefault();
+    //         name.style.border = '4px solid green' 
+    //     }
+
+    // }
+    
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body  {
+    background:orange;
+}
+
+body  #mainbox{
+    display:flex ;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+body #mainbox .box { width:300px ;
+    margin: auto;
+    background: rgb(246, 237, 234);
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-radius:5px ;
+}
+
+
+.box  .iconbox i{
+    font-size: 60PX;
+}
+
+
+ .box h2{
+    margin-bottom:6px ;
+    color:black;
+ }
+
+ .box .p{
+        margin-bottom: 6px;
+        color: grey
+ }
+ 
+ .box button{
+
+     width: 100%;
+     height: 30px;
+     margin: auto;   
+     border: none;
+     color: white;
+     background: orange;
+     font-size: 17px;
+     border-radius: 20px;
+    cursor: pointer; 
+     
+ }
+ .iconbox .icon1{
+    color: rgb(41, 206, 41);
+}
+
+.iconbox .icon2{
+    color: red;
+}
+.iconbox .icon3{
+   color: rgb(255, 196, 0);
+}
+
+#mainbox .box .iconbox {
+   border: 2px solid rgb(107, 176, 3);
+   width: 100px;
+   height:100px;
+   border-radius: 50%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+ #mainbox .box:nth-child(2) .iconbox {
+
+    border-color: rgb(225, 33, 33);
+ }
+ #mainbox .box:nth-child(3) .iconbox{
+    border-color: rgb(235, 198, 12);
+ }
+ #successfulBtn {
+    background: #1cf11c;
+ } 
+ #dangerbtn{
+    background: rgb(246, 61, 61);
+ }
+ #warningbtn{
+    background: #f6b62a;
+ }
+
+#mainbox  button{
+   transition:all ease 0.3 ;
+}
+
+
+#mainbox .box{
+   transition: all ease 0.2s;
+ }
+ #mainbox .box:hover{
+ background: lightblue;
+ }
+
+ #mainbox .button{
+   background: orange;
+ }

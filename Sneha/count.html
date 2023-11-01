@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counter in html</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: rgb(0, 242, 255);
+      width: 100vh;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #mainbox {
+      width: 25opx;
+      font-size: 40px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10px;
+      border-radius: 15px;
+      background: #f6eff4;
+    }
+
+    #mainbox .id {
+      cursor: pointer;
+    }
+
+    #mainbox .span {
+      color: black;
+      padding: 5px;
+      border-radius: 10px;
+
+    }
+
+    #mainbox span.minus {
+      color: white;
+      background: red;
+    }
+
+    #mainbox span.plus {
+      color: white;
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mainbox">
+    <i id="minusbtn" class="fa-solid fa-minus"></i>
+    <span id="countbox">1</span>
+    <i id="plusbtn" class="fa-solid fa-plus"></i>
+  </div>
+
+  <script>
+    let minusbtn = document.getElementById('minusbtn');
+    let plusbnt = document.getElementById('plusBtn');
+
+    minusbtn.onclick = () => {
+      let countbox = document.getElementById('countbox');
+      countbox.innerText = parseInt(countbox.innerText) - 1;
+      color();
+    }
+    
+    plusbtn.onclick = () => {
+      let countbox = document.getElementById('countbox');
+      countbox.innerText = parseInt(countbox.innerText) + 1;
+      color();
+    }
+    
+
+
+    function color() {
+      let countbox = document.getElementById('countbox');
+      if (parseInt(countbox.innerText) == 1) {
+        countbox.classList.remove('plus')
+        countbox.classList.remove('minus');
+      } else if (parseInt(countbox.innerText) > 1) {
+        countbox.classList.add('plus');
+      }
+      else if(parseInt(countbox.innerText) < 1){
+        countbox.classList.add('minus')
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

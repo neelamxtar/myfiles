@@ -1,0 +1,40 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif; ;
+}
+body{
+    background-image:url("https://res.cloudinary.com/practicaldev/image/fetch/s--XxlB2e-9--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
+      height: 100vh; 
+      margin: auto;
+      padding-top:150px ;    
+}
+#tophead{
+    background: rgb(39, 178, 148);
+    width: 600px;
+    height: 280px;
+    margin:auto;
+    padding-top: 25px;
+
+}   
+input{ 
+    background:rgba(198, 174, 168, 0.79) ;
+    width:500px;
+    height: 30px;
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+    align-content: space-between;
+    margin-left: 50px;
+}
+ button{
+     background: blue;
+    width: 100px;
+    height: 35px;
+    margin-left: 40%;
+    color:white;
+}

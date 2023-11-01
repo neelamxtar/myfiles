@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #ff8400;
+}
+
+body #mainBox{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+body #mainBox .box{
+    background: white;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+    
+.box .icon i{
+    font-size: 50px;
+}
+
+.box .icon{
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+    height: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box h2{
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.box p{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.box button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: #ff8400;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icon .icon1{
+    color: green;
+}
+
+#mainBox .box:nth-child(1) .icon{
+    border-color: green;
+}
+
+#mainBox .box:nth-child(2) .icon{
+    border-color: red;
+}
+
+.icon .icon2{
+    color: red;
+}
+
+#mainBox .box:nth-child(3) .icon{
+    border-color: orange;
+}
+
+.icon .icon3{
+    color: orange;
+}
+
+#successBtn{
+    background: green;
+}
+
+#errorBtn{
+    background: red;
+}
+
+#warningBtn{
+    background: orange;
+}
+
+#mainBox button{
+    transition: all ease 0.3s;
+}
+
+#mainBox .box{
+    transition: all ease 0.3s;
+}
+
+#mainBox .box:hover{
+    background: rgb(199, 214, 255);
+}
+
+#mainBox button:hover{
+    background: #ff8400;
+}
